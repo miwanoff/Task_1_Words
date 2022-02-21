@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Игра "Поле Чудес"</title>
+</head>
+<body>
+	<div id="wrap">
+        <div class="banner container-fluid">
+            <div class="row">
+                <div class="col-md-8 show_result text-center">
+                        <h2>Theme: <span id="theme">Choose the theme of words</span></h2>
+                        <span id="word"></span>
+                </div>
+                <div class="col-md-4 themas_to_choose">
+                        <p>Themas to play:</p>
+
+                        <div class="radio">
+                            <input type="radio" id="auto" value="Auto" name="theme">
+                            <label for="auto">Auto</label>
+                        </div>
+                        
+                        <div class="radio">
+                            <input type="radio" id="city" value="City" name="theme">
+                            <label for="city">City</label>
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" id="character" value="Character" name="theme">
+                            <label for="character">Character</label>
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" id="family" value="Family" name="theme">
+                            <label for="family">Family</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row drop">
+                    <div class="col-md-12 drop_field">
+                        <h2 class = 'message'>Drag your letter here:</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="keyboard_block container-fluid">
+                <div class="row">
+                    <div class="col-md-8 text-center keyboard"></div>
+                </div>
+            </div>
+        </div>
+        
+       
+    <script src="script.js"></script>
+</body>
+</html>
